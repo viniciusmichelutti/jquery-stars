@@ -1,0 +1,25 @@
+<!DOCTYPE html />
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Stars</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="../stars.js"></script>
+    </head>
+    <body>
+        <div></div>
+        
+        <script>
+            $("div").stars({
+                stars:5,
+                text: ["1 star", "2 star", "3 star", "4 star", "5 star"],
+                color: 'green',
+                value: 4,
+                click: function(i) {
+                    alert("Star " + i + " selected.");
+                }
+            });
+        </script>
+    </body>
+</html>

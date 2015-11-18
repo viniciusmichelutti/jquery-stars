@@ -35,7 +35,6 @@
             events.removeFilledStars(stars);
             events.fillStars(starsHovered);
             
-            console.log(block.find(".rating-text"));
             if (settings.text) block.find(".rating-text").html($(this).data("rating-text"));
         }).on("mouseout", function() {
             events.removeFilledStars(stars);

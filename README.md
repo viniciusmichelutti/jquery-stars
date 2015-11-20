@@ -1,5 +1,6 @@
 # jquery-stars - A rating star plugin using icon fonts
 Put the rating star in your app without any complications :-)
+Want demo? [See here](http://viniciusmichelutti.github.io/jquery-stars/demo/)
 
 ## Dependencies
 + jQuery

@@ -28,17 +28,17 @@
         }
         
         var stars = this.find("i");
-        
+
         stars.on("mouseover", function() {
             var index = $(this).index() + 1;
             var starsHovered = stars.slice(0, index);
-            events.removeFilledStars(stars);
-            events.fillStars(starsHovered);
+            events.removeFilledStars(stars, settings);
+            events.fillStars(starsHovered, settings);
             
             if (settings.text) block.find(".rating-text").html($(this).data("rating-text"));
         }).on("mouseout", function() {
-            events.removeFilledStars(stars);
-            events.fillStars(stars.filter(".selected"));
+            events.removeFilledStars(stars, settings);
+            events.fillStars(stars.filter(".selected"), settings);
             if (settings.text) block.find(".rating-text").html("");
         }).on("click", function() {
             var index = $(this).index();
@@ -48,20 +48,20 @@
         });
         
         events = {
-            removeFilledStars: function(stars) {
-                stars.removeClass(settings.filledIcon).addClass(settings.emptyIcon);
+            removeFilledStars: function(stars, s) {
+                stars.removeClass(s.filledIcon).addClass(s.emptyIcon);
                 return stars;
             },
             
-            fillStars: function(stars) {
-                stars.removeClass(settings.emptyIcon).addClass(settings.filledIcon);
+            fillStars: function(stars, s) {
+                stars.removeClass(s.emptyIcon).addClass(s.filledIcon);
                 return stars;
             }
         };
         
         if (settings.value > 0) {
             var starsToSelect = stars.slice(0, settings.value);
-            events.fillStars(starsToSelect).addClass("selected");
+            events.fillStars(starsToSelect, settings).addClass("selected");
         }
         
     };

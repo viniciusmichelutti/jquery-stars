@@ -3,19 +3,104 @@
     <head>
         <meta charset="UTF-8" />
         <title>Stars</title>
+        <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
         <script type="text/javascript" src="../stars.js"></script>
     </head>
     <body>
-        <div></div>
+        <header>
+            <div class="wrapper">
+                <h1>jQuery stars</h1>
+                <h2>A rating star plugin using icon fonts</h2>
+                
+                <div class="text-center">
+                    <a href="https://github.com/viniciusmichelutti/jquery-stars"><i class="fa fa-github"></i> View on github</a>
+                </div>
+            </div>
+        </header>
+        <div class="wrapper">
+            <div class="demo-wrapper text-center">
+                <div class="demo"></div>
+            </div>
+            
+            <h4>More stars</h4>
+            <div class="more-stars"></div>
+            <pre style='color:#000020;background:#f6f8ff;'><span style='color:#0057a6; '>&lt;</span><span style='color:#200080; font-weight:bold; '>div</span><span style='color:#474796; '> </span><span style='color:#074726; '>class</span><span style='color:#308080; '>=</span><span style='color:#1060b6; '>"more-stars"</span><span style='color:#0057a6; '>></span><span style='color:#0057a6; '>&lt;/</span><span style='color:#200080; font-weight:bold; '>div</span><span style='color:#0057a6; '>></span></pre>
+            
+            <pre style='color:#000020;background:#f6f8ff;'>$<span style='color:#308080; '>(</span><span style='color:#800000; '>"</span><span style='color:#1060b6; '>.more-stars</span><span style='color:#800000; '>"</span><span style='color:#308080; '>)</span><span style='color:#308080; '>.</span>stars<span style='color:#308080; '>(</span><span style='color:#406080; '>{</span> stars<span style='color:#406080; '>:</span><span style='color:#008c00; '>20</span> <span style='color:#406080; '>}</span><span style='color:#308080; '>)</span><span style='color:#406080; '>;</span>
+</pre>
+            
+            <h4>Font size</h4>
+            <div class="font-size"></div>
+            <pre style='color:#000020;background:#f6f8ff;'><span style='color:#0057a6; '>&lt;</span><span style='color:#200080; font-weight:bold; '>div</span><span style='color:#474796; '> </span><span style='color:#074726; '>class</span><span style='color:#308080; '>=</span><span style='color:#1060b6; '>"font-size"</span><span style='color:#0057a6; '>></span><span style='color:#0057a6; '>&lt;/</span><span style='color:#200080; font-weight:bold; '>div</span><span style='color:#0057a6; '>></span></pre>
+            
+            <pre style='color:#000020;background:#f6f8ff;'><span style='color:#308080; '>.</span>font-size <span style='color:#200080; font-weight:bold; '>i</span> <span style='color:#406080; '>{</span> <span style='color:#7779bb; font-weight:bold; '>font-size</span><span style='color:#308080; '>:</span><span style='color:#008c00; '>9</span><span style='color:#006600; '>px</span><span style='color:#406080; '>;</span> <span style='color:#406080; '>}</span>
+</pre>
+            
+            <pre style='color:#000020;background:#f6f8ff;'>$<span style='color:#308080; '>(</span><span style='color:#800000; '>"</span><span style='color:#1060b6; '>.font-size</span><span style='color:#800000; '>"</span><span style='color:#308080; '>)</span><span style='color:#308080; '>.</span>stars<span style='color:#308080; '>(</span><span style='color:#308080; '>)</span><span style='color:#406080; '>;</span>
+</pre>
+            
+            <h4>Init with values</h4>
+            <div class="value-set"></div>
+            <pre style='color:#000020;background:#f6f8ff;'><span style='color:#0057a6; '>&lt;</span><span style='color:#200080; font-weight:bold; '>div</span><span style='color:#474796; '> </span><span style='color:#074726; '>class</span><span style='color:#308080; '>=</span><span style='color:#1060b6; '>"value-set"</span><span style='color:#0057a6; '>></span><span style='color:#0057a6; '>&lt;/</span><span style='color:#200080; font-weight:bold; '>div</span><span style='color:#0057a6; '>></span></pre>
+            
+            <pre style='color:#000020;background:#f6f8ff;'>$<span style='color:#308080; '>(</span><span style='color:#800000; '>"</span><span style='color:#1060b6; '>.value-set</span><span style='color:#800000; '>"</span><span style='color:#308080; '>)</span><span style='color:#308080; '>.</span>stars<span style='color:#308080; '>(</span><span style='color:#406080; '>{</span> value<span style='color:#406080; '>:</span><span style='color:#008c00; '>4</span> <span style='color:#406080; '>}</span><span style='color:#308080; '>)</span><span style='color:#406080; '>;</span>
+</pre>
+            
+            <h4>Color change</h4>
+            <div class="green-color"></div>
+            <pre style='color:#000020;background:#f6f8ff;'><span style='color:#0057a6; '>&lt;</span><span style='color:#200080; font-weight:bold; '>div</span><span style='color:#474796; '> </span><span style='color:#074726; '>class</span><span style='color:#308080; '>=</span><span style='color:#1060b6; '>"green-color"</span><span style='color:#0057a6; '>></span><span style='color:#0057a6; '>&lt;/</span><span style='color:#200080; font-weight:bold; '>div</span><span style='color:#0057a6; '>></span></pre>
+            
+            <pre style='color:#000020;background:#f6f8ff;'>$<span style='color:#308080; '>(</span><span style='color:#800000; '>"</span><span style='color:#1060b6; '>.green-color</span><span style='color:#800000; '>"</span><span style='color:#308080; '>)</span><span style='color:#308080; '>.</span>stars<span style='color:#308080; '>(</span><span style='color:#406080; '>{</span> color<span style='color:#406080; '>:</span><span style='color:#800000; '>'</span><span style='color:#1060b6; '>#73AD21</span><span style='color:#800000; '>'</span> <span style='color:#406080; '>}</span><span style='color:#308080; '>)</span><span style='color:#406080; '>;</span>
+</pre>
+            
+            <h4>Icon change</h4>
+            <div class="icon-change"></div>
+            <pre style='color:#000020;background:#f6f8ff;'><span style='color:#0057a6; '>&lt;</span><span style='color:#200080; font-weight:bold; '>div</span><span style='color:#474796; '> </span><span style='color:#074726; '>class</span><span style='color:#308080; '>=</span><span style='color:#1060b6; '>"icon-change"</span><span style='color:#0057a6; '>></span><span style='color:#0057a6; '>&lt;/</span><span style='color:#200080; font-weight:bold; '>div</span><span style='color:#0057a6; '>></span></pre>
+            
+            <pre style='color:#000020;background:#f6f8ff;'>$<span style='color:#308080; '>(</span><span style='color:#800000; '>"</span><span style='color:#1060b6; '>.icon-change</span><span style='color:#800000; '>"</span><span style='color:#308080; '>)</span><span style='color:#308080; '>.</span>stars<span style='color:#308080; '>(</span><span style='color:#406080; '>{</span>
+        emptyIcon<span style='color:#406080; '>:</span> <span style='color:#800000; '>'</span><span style='color:#1060b6; '>fa-thumbs-o-up</span><span style='color:#800000; '>'</span><span style='color:#308080; '>,</span>
+        filledIcon<span style='color:#406080; '>:</span> <span style='color:#800000; '>'</span><span style='color:#1060b6; '>fa-thumbs-up</span><span style='color:#800000; '>'</span>
+<span style='color:#406080; '>}</span><span style='color:#308080; '>)</span><span style='color:#406080; '>;</span>
+</pre>
+            
+            <h4>With text</h4>
+            <div class="text"></div>
+            <pre style='color:#000020;background:#f6f8ff;'><span style='color:#0057a6; '>&lt;</span><span style='color:#200080; font-weight:bold; '>div</span><span style='color:#474796; '> </span><span style='color:#074726; '>class</span><span style='color:#308080; '>=</span><span style='color:#1060b6; '>"text"</span><span style='color:#0057a6; '>></span><span style='color:#0057a6; '>&lt;/</span><span style='color:#200080; font-weight:bold; '>div</span><span style='color:#0057a6; '>></span></pre>
+            
+            <pre style='color:#000020;background:#f6f8ff;'>$<span style='color:#308080; '>(</span><span style='color:#800000; '>"</span><span style='color:#1060b6; '>.text</span><span style='color:#800000; '>"</span><span style='color:#308080; '>)</span><span style='color:#308080; '>.</span>stars<span style='color:#308080; '>(</span><span style='color:#406080; '>{</span> 
+        text<span style='color:#406080; '>:</span> <span style='color:#308080; '>[</span><span style='color:#800000; '>"</span><span style='color:#1060b6; '>1 star</span><span style='color:#800000; '>"</span><span style='color:#308080; '>,</span> <span style='color:#800000; '>"</span><span style='color:#1060b6; '>2 star</span><span style='color:#800000; '>"</span><span style='color:#308080; '>,</span> <span style='color:#800000; '>"</span><span style='color:#1060b6; '>3 star</span><span style='color:#800000; '>"</span><span style='color:#308080; '>,</span> <span style='color:#800000; '>"</span><span style='color:#1060b6; '>4 star</span><span style='color:#800000; '>"</span><span style='color:#308080; '>,</span> <span style='color:#800000; '>"</span><span style='color:#1060b6; '>5 star</span><span style='color:#800000; '>"</span><span style='color:#308080; '>]</span>
+<span style='color:#406080; '>}</span><span style='color:#308080; '>)</span><span style='color:#406080; '>;</span>
+</pre>
+            
+            <h4>Callback</h4>
+            <div class="click-callback"></div>
+            <pre style='color:#000020;background:#f6f8ff;'><span style='color:#0057a6; '>&lt;</span><span style='color:#200080; font-weight:bold; '>div</span><span style='color:#474796; '> </span><span style='color:#074726; '>class</span><span style='color:#308080; '>=</span><span style='color:#1060b6; '>"click-callback"</span><span style='color:#0057a6; '>></span><span style='color:#0057a6; '>&lt;/</span><span style='color:#200080; font-weight:bold; '>div</span><span style='color:#0057a6; '>></span></pre>
+            
+            <pre style='color:#000020;background:#f6f8ff;'>$<span style='color:#308080; '>(</span><span style='color:#800000; '>"</span><span style='color:#1060b6; '>.click-callback</span><span style='color:#800000; '>"</span><span style='color:#308080; '>)</span><span style='color:#308080; '>.</span>stars<span style='color:#308080; '>(</span><span style='color:#406080; '>{</span> 
+        click<span style='color:#406080; '>:</span> <span style='color:#200080; font-weight:bold; '>function</span><span style='color:#308080; '>(</span>i<span style='color:#308080; '>)</span> <span style='color:#406080; '>{</span>
+            <span style='color:#200080; font-weight:bold; '>alert</span><span style='color:#308080; '>(</span><span style='color:#800000; '>"</span><span style='color:#1060b6; '>Star </span><span style='color:#800000; '>"</span> <span style='color:#308080; '>+</span> i <span style='color:#308080; '>+</span> <span style='color:#800000; '>"</span><span style='color:#1060b6; '> selected.</span><span style='color:#800000; '>"</span><span style='color:#308080; '>)</span><span style='color:#406080; '>;</span>
+        <span style='color:#406080; '>}</span>
+<span style='color:#406080; '>}</span><span style='color:#308080; '>)</span><span style='color:#406080; '>;</span>
+</pre>
+        </div>
         
         <script>
-            $("div").stars({
-                stars:5,
-                text: ["1 star", "2 star", "3 star", "4 star", "5 star"],
-                color: 'green',
-                value: 4,
+            $(".demo").stars({ text: ["Bad", "Not so bad", "hmmm", "Good", "Perfect"] });
+            
+            $(".more-stars").stars({ stars:20 });
+            $(".font-size").stars();
+            $(".value-set").stars({ value:4 });
+            $(".green-color").stars({ color:'#73AD21' });
+            $(".icon-change").stars({
+                emptyIcon: 'fa-thumbs-o-up',
+                filledIcon: 'fa-thumbs-up'
+            });
+            $(".text").stars({ 
+                text: ["1 star", "2 star", "3 star", "4 star", "5 star"]
+            });
+            $(".click-callback").stars({ 
                 click: function(i) {
                     alert("Star " + i + " selected.");
                 }

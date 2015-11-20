@@ -1,0 +1,23 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
+
+* { padding:0; margin:0; }
+body { font-family: 'Open Sans', Tahoma, sans-serif; color:#626262; font-size:16px; }
+h1 { text-align:center; font-size:42px; line-height:60px; }
+h2 { font-size:22px; line-height:36px; text-align:center; font-weight:300; margin-top:15px; margin-bottom:60px; }
+h4 { margin:70px 0 10px; font-size:18px; }
+
+header { background-color:#37A3E3; color:#FFF; }
+
+a { padding:15px; background-color:#FFF; color:#37A3E3; text-decoration:none; font-size:18px; text-transform:uppercase; }
+a:hover { color:#1e91d6; }
+
+i { font-size:21px !important; }
+pre { margin-top:15px; }
+.wrapper { width:960px; margin:0 auto; padding:45px 0; }
+.text-center { text-align:center; }
+
+.demo-wrapper .rating-text { height:36px; width:100%; font-size:18px; }
+.demo i { margin:0 3px; font-size:48px !important; }
+
+/** RATINGS **/
+.font-size i { font-size:9px !important; }

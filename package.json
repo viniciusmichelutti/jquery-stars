@@ -1,0 +1,25 @@
+{
+  "name": "jquery-stars",
+  "version": "1.0.0",
+  "description": "A rating star plugin using icon fonts",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-rename": "^1.2.2",
+    "gulp": "^3.9.0",
+    "gulp-uglify": "^1.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/viniciusmichelutti/jquery-stars.git"
+  },
+  "author": "Vinicius M. Michelutti",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/viniciusmichelutti/jquery-stars/issues"
+  },
+  "homepage": "https://github.com/viniciusmichelutti/jquery-stars"
+}

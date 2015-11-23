@@ -1,7 +1,7 @@
 (function($) {
     
     $.fn.stars = function(options) {
-      
+
         var settings = $.extend({
             stars: 5,
             emptyIcon: 'fa-star-o',

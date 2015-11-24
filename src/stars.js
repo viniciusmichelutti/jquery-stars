@@ -1,3 +1,10 @@
+/*!
+ * stars.js
+ * https://github.com/viniciusmichelutti/jquery-stars
+ *
+ * Released under the MIT license
+ * https://github.com/viniciusmichelutti/jquery-stars/blob/master/LICENSE
+ */
 (function($) {
     
     $.fn.stars = function(options) {
@@ -15,10 +22,16 @@
         var block = this;
         
         for (var x = 0; x < settings.stars; x++) {
-            var icon = $("<i>").addClass("fa").addClass(settings.emptyIcon).css("color", settings.color);
+            var icon = $("<i>").addClass("fa").addClass(settings.emptyIcon);
+            
             if (settings.text) {    
                 icon.attr("data-rating-text", settings.text[x]);
             }
+            
+            if (settings.color !== "none") {
+                icon.css("color", settings.color)
+            }
+            
             this.append(icon);
         }
         

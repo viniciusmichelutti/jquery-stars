@@ -78,6 +78,7 @@
             events.fillStars(starsToSelect, settings).addClass("selected");
         }
         
+        return this;
     };
     
 }(jQuery));

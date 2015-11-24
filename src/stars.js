@@ -14,6 +14,7 @@
             emptyIcon: 'fa-star-o',
             filledIcon: 'fa-star',
             color: '#E4AD22',
+            starClass: '',
             value: 0,
             text: null,
             click: function() {}
@@ -22,7 +23,7 @@
         var block = this;
         
         for (var x = 0; x < settings.stars; x++) {
-            var icon = $("<i>").addClass("fa").addClass(settings.emptyIcon);
+            var icon = $("<i>").addClass("fa").addClass(settings.emptyIcon).addClass(settings.starClass);
             
             if (settings.text) {    
                 icon.attr("data-rating-text", settings.text[x]);

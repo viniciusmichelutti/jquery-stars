@@ -32,6 +32,7 @@ $('div').stars({
 stars      : 5                // How many stars are displayed. Default is 5
 emptyIcon  : 'fa-star-o'      // Font icon class for empty stars
 filledIcon : 'fa-star'        // Font icon class when hovering or selected
+starClass  : ''               // Common class for stars
 color      : '#E4AD22'        // Font color, if 'none' doesn't apply any color
 value      : 0                // Default value to initialize filled stars
 text       : []               // Array of strings, tooltips for each star
